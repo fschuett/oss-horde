@@ -1,3 +1,3 @@
-# linuxmuster-horde
+# oss-horde
 
-This package contains configuration files for php-horde-webmail and php-horde-whups.
+This package contains configuration files for horde5 webmail package.

@@ -1,0 +1,22 @@
+webserver=apache2
+
+case "$1" in
+    purge)
+
+	rm -f /etc/${webserver}/conf-{available|enabled}/linuxmuster-horde.conf
+	service $webserver restart
+
+	rm -rf /etc/linuxmuster/horde
+	rm -rf /var/cache/linuxmuster/installed_21_horde
+
+	;;
+
+	remove)
+
+	rm -f /etc/${webserver}/conf-{availabel|enabled}/linuxmuster-horde.conf
+	service $webserver restart
+	;;
+
+service apache2 reload
+
+exit 0
