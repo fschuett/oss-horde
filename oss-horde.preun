@@ -1,2 +1,0 @@
-
-	update-alternatives --remove horde-config /etc/linuxmuster/horde/horde
