@@ -141,19 +141,19 @@ $cfgSources['localsql'] = array(
 $cfgSources['localldap'] = array(
      // Disabled by default
     'disabled' => false,
-    'title' => _("@@schoolname@@ Adressbuch"),
+    'title' => _("#SCHOOL_NAME# Adressbuch"),
     'type' => 'ldap',
     'params' => array(
         'server' => 'localhost',
         'port' => 389,
         'tls' => false,
-        'root' => 'ou=accounts,@@basedn@@',
+        'root' => 'ou=people,#SCHOOL_BASEDN#',
         'dn' => array('cn'),
         'objectclass' => array('top',
                                'person',
                                'posixAccount',
                                'inetOrgPerson'),
-        'filter' => '!(sn=Account)',
+        'filter' => '(!(role=workstations))',
         'scope' => 'one',
         'charset' => 'utf-8',
         'checkrequired' => false,

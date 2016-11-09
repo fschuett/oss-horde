@@ -1,4 +1,5 @@
 <?php
+$app_fileroot = '/usr/share/php5/PEAR/www/horde';
 
-$this->applications['horde']['webroot'] = '/webmail';
+// $this->applications['horde']['webroot'] = '/';
 
