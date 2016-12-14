@@ -153,7 +153,7 @@ $cfgSources['localldap'] = array(
                                'person',
                                'posixAccount',
                                'inetOrgPerson'),
-        'filter' => '(!(role=workstations))',
+        'filter' => '!(role=workstations)',
         'scope' => 'one',
         'charset' => 'utf-8',
         'checkrequired' => false,

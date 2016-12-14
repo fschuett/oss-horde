@@ -2,7 +2,7 @@
 $servers['imap'] = array(
     'disabled' => false,
     'name' => 'Cyrus IMAP Server',
-    'hostspec' => '#SCHOOL_NETBIOSNAME#.#SCHOOL_DOMAIN#',
+    'hostspec' => 'mailserver.#SCHOOL_DOMAIN#',
     'hordeauth' => true,
     'protocol' => 'imap',
     'port' => 143,
@@ -13,7 +13,7 @@ $servers['imap'] = array(
             'login' => 'cyrus',
             'password' => '#CYRADM_PASS#',
             'protocol' => 'imap',
-            'hostspec' => 'localhost',
+            'hostspec' => 'mailserver',
             'port' => 143
         )
     ),
