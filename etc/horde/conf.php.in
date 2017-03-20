@@ -2,7 +2,7 @@
 /* CONFIG START. DO NOT CHANGE ANYTHING IN OR AFTER THIS LINE. */
 // $Id: e5c97f37af4b6749ffcb02bfe038bbbdcabd9b7c $
 $conf['vhosts'] = false;
-$conf['debug_level'] = E_ALL & ~E_NOTICE;
+$conf['debug_level'] = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED;
 $conf['max_exec_time'] = 0;
 $conf['compress_pages'] = true;
 $conf['secret_key'] = '#SECRET_KEY#';
