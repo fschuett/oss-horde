@@ -15,7 +15,6 @@ ini_set('display_errors', 1);
 require_once 'PEAR/Config.php';
 require_once PEAR_Config::singleton()
     ->get('horde_dir', null, 'pear.horde.org') . '/lib/Application.php';
-require_once 'Bundle.php';
 
 // Load the CLI environment.
 $cli = Horde_Core_Cli::init();
@@ -29,7 +28,7 @@ $cli->writeln($cli->yellow($cli->bold('Installing Horde Groupware Webmail Editio
 
 $bundle = new Horde_Bundle($cli);
 $bundle->init();
-//$bundle->configDb();
+$bundle->configDb();
 $bundle->migrateDb();
 $bundle->writeAllConfigs();
 $bundle->configAuth();
